@@ -1,0 +1,216 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Custom styles to complement Bootstrap */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #4a90e2;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Quiz Styles */
+#quizContainer, #resultsContainer {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.question {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.question p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.form-check {
+    margin-bottom: 0.75rem;
+    padding-left: 1.75rem;
+}
+
+/* Results Styles */
+#timerDisplay {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+#score {
+    font-size: 2rem;
+    color: #4a90e2;
+}
+
+/* Review Question Styles */
+.review-question {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.review-question.correct {
+    background-color: rgba(101, 248, 135, 0.473);
+    border-left: 4px solid #28a745;
+}
+
+.review-question.incorrect {
+    background-color: rgba(250, 98, 98, 0.5);
+    border-left: 4px solid #dc3545;
+}
+
+/* Button Styles */
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-success, .btn-primary {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-success:hover, .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-secondary
+{
+    background-color: #35c07b;
+    border-color: #35c07b;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* Loading Styles */
+#loadingIndicator {
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#loadingIndicator .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+#loadingIndicator p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #4a90e2;
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+/* Error Message Styles */
+#errorMessage {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+
+/* Custom Radio Button Styles */
+.form-check-input[type="radio"] {
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.753);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-check-input[type="radio"]:checked {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.form-check-input[type="radio"]:focus {
+    border-color: #4a90e2;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .question p {
+        font-size: 1rem;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+}
